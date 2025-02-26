@@ -1,3 +1,4 @@
 Web3 is decentralized application
 it ensures security and that people are totally involved and aware of the service that they use.
 it also makes web flow faster.
+we will set up a new Ethereum wallet
