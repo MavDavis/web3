@@ -1,0 +1,11 @@
+{
+  "name": "web3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/MavDavis/web3.git",
+  "author": "Mavdavis <ekwesimarvelous@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "hardhat": "^2.22.19"
+  }
+}

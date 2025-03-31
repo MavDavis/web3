@@ -2,4 +2,12 @@ Web3 is decentralized application
 it ensures security and that people are totally involved and aware of the service that they use.
 it also makes web flow faster.
 we will set up a new Ethereum wallet
-resume on sunday 30th 
+
+
+
+created a new folder
+git init
+yarn init -y (check what -y is)
+yarn add -D hardhat
+npx hardhat  -  and we selected the hardhat.config.js
+we created a .gitignore file and added node_modules to it 
