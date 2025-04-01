@@ -11,3 +11,6 @@ yarn init -y (check what -y is)
 yarn add -D hardhat
 npx hardhat  -  and we selected the hardhat.config.js
 we created a .gitignore file and added node_modules to it 
+
+we installed couple packages that can assist hardhat to create a contract, we also installed some packages for testing,convereted our js files to typescripts
+we ran the command for testing after we created a testing file for helloWorld, and it passed. PS: I learnt that the change or updates made to the packages from when the video was made till real time is a lot. so it will be advisable to stay up to date.
