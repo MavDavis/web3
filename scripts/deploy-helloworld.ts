@@ -8,3 +8,10 @@ async function deploy() {
     return hello;
 
 }
+// @ts-ignore
+async function sayHello(hello) {
+    console.log("Say Hello: ", await hello.hello());
+    
+}
+// deploy().then((hello) => sayHello(hello));
+deploy().then(sayHello)
