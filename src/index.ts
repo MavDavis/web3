@@ -34,5 +34,10 @@ async function getContract() {
     console.log(await contract.hello());
 }
 
+async function currentChain(): Promise<boolean> {
+    //@ts-ignore
+    return (await window.ethereum.request({ method: 'eth_chainId' })) as string;
+}
+console.log("Connected to chain:", currentChain());
 
 getContract();
