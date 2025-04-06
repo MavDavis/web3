@@ -18,3 +18,6 @@ we ran the command for testing after we created a testing file for helloWorld, a
 
 
 yayyyyyyy, I learnt something today. So, I asked gpt why we had to yarn add hardhat to our dev dependencies, and npx it afterwards, and I got to understand that node package execution (npx) doesn't just install a package but executes it as well- so when you run npx on a package, it checks the availability of that package and either installs or spin it up depending on whether it is available or not. It got me wondering why then do we have to yarn add if npx does both, and I learnt that npx doesn't add to your node_modules, it just caches it in an npm/npx folder for a while depending on the expiry date on it and can even fetch an updated package if the package has a new release which can cause conflict on your codebase cos of dependencies and version issues.
+
+solidity.js: 
+There are several types in solidity.js : string, *unint*, 
