@@ -35,6 +35,78 @@
       "artifacts": [
         "HelloWorld"
       ]
+    },
+    "/Users/mac/Documents/web development/web3/contracts/Counter.sol": {
+      "lastModificationDate": 1744208146882,
+      "contentHash": "8ff54a084c6e898f63312607ac00aa96",
+      "sourceName": "contracts/Counter.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "hardhat/console.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "Counter"
+      ]
+    },
+    "/Users/mac/Documents/web development/web3/node_modules/hardhat/console.sol": {
+      "lastModificationDate": 1743415952589,
+      "contentHash": "681c532e816169606d13a5fe8b475074",
+      "sourceName": "hardhat/console.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "console"
+      ]
     }
   }
 }

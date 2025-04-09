@@ -21,23 +21,49 @@ async function getContract() {
     }
 
     // @ts-ignore
-    const provider = new ethers.providers.Web3Provider(window.ethereum)
+    const provider = new ethers.providers.Web3Provider(window.ethereum).getSigner()
     const contract = new ethers.Contract(
         address,
         [
-            "function hello() public pure returns(string memory)",
+            "function count()public",
+            "function getCounter() public view returns(uint32 )",
         ], // abi
         provider
     );
 
-    console.log("We have done it, time to call");
-    console.log(await contract.hello());
+    main(contract);
 }
 
 async function currentChain(): Promise<boolean> {
     //@ts-ignore
     return (await window.ethereum.request({ method: 'eth_chainId' })) as string;
 }
+async function main(contract) {
+    const val = await contract.getCounter();
+  
+    // Create container
+    const el = document.createElement('div');
+    el.innerHTML = `
+      <div>
+        <p id="counter">${val}</p>
+        <button id="increaseBtn">Increase Count</button>
+      </div>
+    `;
+  
+    // Clear and append to body
+    document.body.innerHTML = '';
+    document.body.appendChild(el);
+  
+    // Add event listener for the button
+    document.getElementById('increaseBtn')?.addEventListener('click', async () => {
+      const tx = await contract.count();
+      await tx.wait();
+      const newVal = await contract.getCounter();
+      document.getElementById('counter')!.textContent = newVal;
+    });
+  }
+  
+  
 console.log("Connected to chain:", currentChain());
-
+ 
 getContract();
