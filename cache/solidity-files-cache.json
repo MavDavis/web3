@@ -37,8 +37,8 @@
       ]
     },
     "/Users/mac/Documents/web development/web3/contracts/Counter.sol": {
-      "lastModificationDate": 1744208146882,
-      "contentHash": "8ff54a084c6e898f63312607ac00aa96",
+      "lastModificationDate": 1744286929744,
+      "contentHash": "01def689fbf184e3c226f6377ea2733c",
       "sourceName": "contracts/Counter.sol",
       "solcConfig": {
         "version": "0.8.10",
