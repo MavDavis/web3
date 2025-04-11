@@ -21,3 +21,4 @@ yayyyyyyy, I learnt something today. So, I asked gpt why we had to yarn add hard
 
 solidity.js: 
 There are several types in solidity.js : string, uint, address,  
+to deploy to rinkeby network, just set it in your hardhat config, and replace localhost with rinkeby or any other network you want to use in your deploy command and run. 
