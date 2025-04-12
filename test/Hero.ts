@@ -9,11 +9,13 @@ describe("Hero", function () {
     const Hero = await ethers.getContractFactory("Hero");
     hero = await Hero.deploy();
   });
-
+  it("should get an empty array ", async () => {
+     expect(await hero.getHeroes()).to.deep.equal([]);
+  });
   it("should fail at creating hero because of insufficient payment", async () => {
     await expect(
       hero.createHero(0, {
-        value: ethers.utils.parseEther("0.049") // less than 0.05
+        value: ethers.utils.parseEther("0.049"), // less than 0.05
       })
     ).to.be.revertedWith("Oga, add money");
   });
