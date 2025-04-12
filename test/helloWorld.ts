@@ -8,6 +8,6 @@ describe("Hello World", () => {
         const HW = await ethers.getContractFactory("HelloWorld");
         const hello = await HW.deploy();
 
-        expect(await hello.hello()).to.equal("Hello, World");
+        expect(await hello.hello()).to.equal("Hello world");
     });
 });
