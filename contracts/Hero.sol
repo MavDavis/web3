@@ -34,7 +34,7 @@ contract Hero {
         return (hero >> 22 ) & 0x1F;
     }
     function createHero(Class class) public payable {
-        require(msg.value >= 0.05 ether, "Oga, add money");
+        require(msg.value >= 0.05 ether, "Oga, add money!");
         uint[] memory stats = new uint[](5);
         stats[0] = 2;
         stats[1] = 5;
