@@ -6,8 +6,8 @@
     uint32 counter;
     event CounterInc(uint indexed counter);
     function count ()public{
+      // write function
         counter++;
-        console.log("counter is now ", counter);
         emit CounterInc(counter);
     }
       function getCounter ()public  view returns(uint32){

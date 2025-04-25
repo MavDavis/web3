@@ -14,11 +14,14 @@ we created a .gitignore file and added node_modules to it
 
 we installed couple packages that can assist hardhat to create a contract, we also installed some packages for testing,convereted our js files to typescripts
 we ran the command for testing after we created a testing file for helloWorld, and it passed. PS: I learnt that the change or updates made to the packages from when the video was made till real time is a lot. so it will be advisable to stay up to date.'
-
+clean codes, less line of code enhances gas optimisation.
 
 
 yayyyyyyy, I learnt something today. So, I asked gpt why we had to yarn add hardhat to our dev dependencies, and npx it afterwards, and I got to understand that node package execution (npx) doesn't just install a package but executes it as well- so when you run npx on a package, it checks the availability of that package and either installs or spin it up depending on whether it is available or not. It got me wondering why then do we have to yarn add if npx does both, and I learnt that npx doesn't add to your node_modules, it just caches it in an npm/npx folder for a while depending on the expiry date on it and can even fetch an updated package if the package has a new release which can cause conflict on your codebase cos of dependencies and version issues.
 
 solidity.js: 
-There are several types in solidity.js : string, uint, address,  
+There are several types in solidity.js : string, uint, address,struct, object,array - there are ttwo types of array -fixed and dynamic;
+a fixed array takes in a param of a fixed value and is used when you want to ensure that a user cannot be added to the array. A dynamic array allows unlimited number of array. 
+Array of structs 
+
 to deploy to rinkeby network, just set it in your hardhat config, and replace localhost with rinkeby or any other network you want to use in your deploy command and run. 
